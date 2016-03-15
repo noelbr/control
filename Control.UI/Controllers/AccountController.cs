@@ -93,6 +93,7 @@ namespace Control.UI.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+            HttpContext.Session["culture"] = "fr-FR";
             return View();
         }
 
@@ -105,7 +106,7 @@ namespace Control.UI.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new User { UserName = model.Email, Email = model.Email };
+                var user = new User { UserName = model.Email, Email = model.Email, DateCreated = DateTime.Now };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
