@@ -133,6 +133,11 @@ namespace Control.UI.Controllers
             return View();
         }
 
+        public PartialViewResult LoggedUserPartial()
+        {
+            return PartialView();
+        }
+
         private ActionResult RedirectToLocal(string returnUrl)
         {
             if (Url.IsLocalUrl(returnUrl))
