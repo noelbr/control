@@ -77,7 +77,7 @@
         <div class="container-fluid expanded-panel">
             <div class="row">
                 <div id="logo" class="col-xs-12 col-sm-2">
-                    <a href="index.html">Control</a>
+                    <a href="index.html">NCC - Control</a>
                 </div>
                 <div id="top-panel" class="col-xs-12 col-sm-10">
                     <div class="row">
@@ -86,7 +86,7 @@
                                 <i class="fa fa-bars"></i>
                             </a>
                             <div id="search">
-                                <input type="text" placeholder="search" />
+                                <input type="text" placeholder="pesquisar" />
                                 <i class="fa fa-search"></i>
                             </div>
                         </div>
@@ -101,13 +101,25 @@
         </div>
     </header>    
     <!--Header End -->
+
+    <!--
+                           Movimento Financeiro: Últimos lançamentos
+                           Contas a Pagar/Receber
+                           Envio de alertas de sistema via Email
+                           Recebimento de mercadorias
+                           Consultar pedidos/propostas
+                           Agrupar pedidos e solicitações por Projeto
+                           Visualizar Projetos
+                           -->
+
+
     <!--Start Container-->
     <div id="main" class="container-fluid">
         <div class="row">
             <div id="sidebar-left" class="col-xs-2 col-sm-2">
                 <ul class="nav main-menu">
                     <li>
-                        <a href="ajax/dashboard.html" class="active ajax-link">
+                        <a href="@Url.Action("Index", "Painel")" >
                             <i class="fa fa-dashboard"></i>
                             <span class="hidden-xs">Painel</span>
                         </a>
@@ -118,11 +130,14 @@
                             <span class="hidden-xs">Vendas</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="ajax-link" href="ajax/charts_xcharts.html">xCharts</a></li>
-                            <li><a class="ajax-link" href="ajax/charts_flot.html">Flot Charts</a></li>
-                            <li><a class="ajax-link" href="ajax/charts_google.html">Google Charts</a></li>
-                            <li><a class="ajax-link" href="ajax/charts_morris.html">Morris Charts</a></li>
-                            <li><a class="ajax-link" href="ajax/charts_coindesk.html">CoinDesk realtime</a></li>
+                            <li>@Html.ActionLink("Propostas", "Propostas", "Vendas")</li>
+                            <li>@Html.ActionLink("Pedidos", "Pedidos", "Vendas")</li>
+                            <li>@Html.ActionLink("Controle de Visitas", "Visitas", "Vendas")</li>
+                            <li>@Html.ActionLink("Clientes", "Propostas", "Vendas")</li>
+                            <li>@Html.ActionLink("Tabela de Preços", "TabelaPrecos", "Vendas")</li>
+                            <li>@Html.ActionLink("Disponibilidade Produtos", "ConsultaEstoque", "Vendas")</li>
+                            <li>@Html.ActionLink("Histórico Pedidos", "Historicos Pedidos", "Vendas")</li>
+                            <li>@Html.ActionLink("Vendas por Periodo", "Historicos Pedidos", "Vendas")</li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -131,9 +146,14 @@
                             <span class="hidden-xs">Compras</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="ajax-link" href="ajax/tables_simple.html">Simple Tables</a></li>
-                            <li><a class="ajax-link" href="ajax/tables_datatables.html">Data Tables</a></li>
-                            <li><a class="ajax-link" href="ajax/tables_beauty.html">Beauty Tables</a></li>
+                            <li>@Html.ActionLink("Solicitação de Materiais", "SolicitacaoMateriais", "Compras")</li>
+                            <li>@Html.ActionLink("Pedido de Compras", "PedidoCompras", "Compras")</li>
+                            <li>@Html.ActionLink("Conferência e Recebimento de Mercadorias", "Recebimento", "Compras")</li>
+                            <li>@Html.ActionLink("Entrada de Notas Fiscais", "EntradaNotasFiscais", "Compras")</li>
+                            <li>@Html.ActionLink("Baixa de Pedidos de Compras", "BaixaPedidos", "Compras")</li>                            
+                            <li>@Html.ActionLink("Histórico de Compras", "Historico", "Compras")</li>
+                            <li>@Html.ActionLink("Evolução de Preços por Produto", "PrecoporProduto", "Compras")</li>
+                            <li>@Html.ActionLink("Listagem de Pedidos", "ListaPedidos", "Compras")</li>                            
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -142,9 +162,11 @@
                             <span class="hidden-xs">Estoque</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="ajax-link" href="ajax/forms_elements.html">Elements</a></li>
-                            <li><a class="ajax-link" href="ajax/forms_layouts.html">Layouts</a></li>
-                            <li><a class="ajax-link" href="ajax/forms_file_uploader.html">File Uploader</a></li>
+                            <li>@Html.ActionLink("Cadastro de Movimentação Estoque", "MovimentacaoEstoque", "Estoque")</li>
+                            <li>@Html.ActionLink("Importação de produtos de NFe Entrada", "ImportacaoNFE", "Estoque")</li>
+                            <li>@Html.ActionLink("Baixa de Produtos (RMA, Perda, Defeito, Composição)", "BaixaProdutos", "Estoque")</li>                            
+                            <li>@Html.ActionLink("Inventário de Produtos", "Inventario Produtos", "Estoque")</li>
+                            <li>@Html.ActionLink("Consulta Estoque", "ConsultaEstoque", "Estoque")</li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -153,11 +175,12 @@
                             <span class="hidden-xs">Financeiro</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="ajax-link" href="ajax/ui_grid.html">Grid</a></li>
-                            <li><a class="ajax-link" href="ajax/ui_buttons.html">Buttons</a></li>
-                            <li><a class="ajax-link" href="ajax/ui_progressbars.html">Progress Bars</a></li>
-                            <li><a class="ajax-link" href="ajax/ui_jquery-ui.html">Jquery UI</a></li>
-                            <li><a class="ajax-link" href="ajax/ui_icons.html">Icons</a></li>
+                            <li>@Html.ActionLink("Fluxo de Caixa", "FluxoCaixa", "Financeiro")</li>
+                            <li>@Html.ActionLink("Visualizar Documentos Fiscais", "VisualizarDocumentos", "Financeiro")</li>
+                            <li>@Html.ActionLink("Contas a Pagar / Receber", "", "Financeiro")</li>
+                            <li>@Html.ActionLink("Controle Conta Corrente / Conciliação Bancária", "", "Financeiro")</li>
+                            <li>@Html.ActionLink("Fluxo de Caixa", "", "Financeiro")</li>
+                            <li>@Html.ActionLink("Movimento Financeiro por período", "", "Financeiro")</li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -166,17 +189,11 @@
                             <span class="hidden-xs">Faturamento</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="ajax/page_login.html">Login</a></li>
-                            <li><a href="ajax/page_register.html">Register</a></li>
-                            <li><a id="locked-screen" class="submenu" href="ajax/page_locked.html">Locked Screen</a></li>
-                            <li><a class="ajax-link" href="ajax/page_contacts.html">Contacts</a></li>
-                            <li><a class="ajax-link" href="ajax/page_feed.html">Feed</a></li>
-                            <li><a class="ajax-link add-full" href="ajax/page_messages.html">Messages</a></li>
-                            <li><a class="ajax-link" href="ajax/page_pricing.html">Pricing</a></li>
-                            <li><a class="ajax-link" href="ajax/page_invoice.html">Invoice</a></li>
-                            <li><a class="ajax-link" href="ajax/page_search.html">Search Results</a></li>
-                            <li><a class="ajax-link" href="ajax/page_404.html">Error 404</a></li>
-                            <li><a href="ajax/page_500.html">Error 500</a></li>
+                            <li>@Html.ActionLink("Controle e Emissão de Notas Fiscais", "", "Financeiro")</li>
+                            <li>@Html.ActionLink("Integração SEFAZ (Secretária da Fazenda): Inclusão e Cancelamento de NF", "", "Financeiro")</li>
+                            <li>@Html.ActionLink("Emissão de DANFE", "", "Financeiro")</li>
+                            <li>@Html.ActionLink("Notas Fiscais Emitidas", "", "Financeiro")</li>
+                            <li>@Html.ActionLink("Status Integração SEFAZ", "", "Financeiro")</li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -185,12 +202,17 @@
                             <span class="hidden-xs">Cadastro</span>
                         </a>
                         <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Clientes", "Clientes", "Cadastro")</li>
+                            <li>@Html.ActionLink("Fornecedores", "Fornecedores", "Cadastro")</li>
+                            <li>@Html.ActionLink("Produtos", "Produtos", "Cadastro")</li>
+                            <li>@Html.ActionLink("Cadastro de “Prospects” (Funil de Vendas)", "Prospects", "Cadastro")</li>
+                            <li>@Html.ActionLink("CFOP", "CFOP", "Cadastro")</li>
                             <li><a class="ajax-link" href="ajax/maps.html">OpenStreetMap</a></li>
                             <li><a class="ajax-link" href="ajax/map_fullscreen.html">Fullscreen map</a></li>
                         </ul>
                     </li>
                     <!-- Menus não utilizados - Begin-->
-                    <li class="dropdown">
+                    @*<li class="dropdown">
                         <a href="#" class="dropdown-toggle">
                             <i class="fa fa-picture-o"></i>
                             <span class="hidden-xs">Gallery</span>
@@ -272,7 +294,7 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
+                    </li>*@
                     <!-- Menus não utilizados - End-->
                 </ul>
             </div>

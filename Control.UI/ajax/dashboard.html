@@ -3,7 +3,7 @@
 	<div id="breadcrumb" class="col-xs-12">
 		<ol class="breadcrumb">
 			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Dashboard</a></li>
+			<li><a href="#">Painel</a></li>
 		</ol>
 	</div>
 </div>
@@ -11,15 +11,15 @@
 <!--Start Dashboard 1-->
 <div id="dashboard-header" class="row">
 	<div class="col-xs-10 col-sm-2">
-		<h3>HELLO, DASHBOARD!</h3>
+		<h3>NCC MAPA </h3>
 	</div>
 	<div class="col-xs-2 col-sm-1 col-sm-offset-1">
 		<div id="social" class="row">
-			<a href="#"><i class="fa fa-google-plus"></i></a>
+			<!--<a href="#"><i class="fa fa-google-plus"></i></a>
 			<a href="#"><i class="fa fa-facebook"></i></a>
 			<a href="#"><i class="fa fa-twitter"></i></a>
 			<a href="#"><i class="fa fa-linkedin"></i></a>
-			<a href="#"><i class="fa fa-youtube"></i></a>
+			<a href="#"><i class="fa fa-youtube"></i></a>-->
 		</div>
 	</div>
 	<div class="clearfix visible-xs"></div>
@@ -28,22 +28,22 @@
 			<div class="col-xs-4">
 				<div class="sparkline-dashboard" id="sparkline-1"></div>
 				<div class="sparkline-dashboard-info">
-					<i class="fa fa-usd"></i>756.45M
-					<span class="txt-primary">EBITDA</span>
+					<i class="fa "></i>507
+					<span class="txt-primary">PEDIDOS</span>
 				</div>
 			</div>
 			<div class="col-xs-4">
 				<div class="sparkline-dashboard" id="sparkline-2"></div>
 				<div class="sparkline-dashboard-info">
-					<i class="fa fa-usd"></i>245.12M
-					<span class="txt-info">OIBDA</span>
+					<i class="fa fa-usd"></i>17.800,00
+					<span class="txt-info">VENDAS</span>
 				</div>
 			</div>
 			<div class="col-xs-4">
 				<div class="sparkline-dashboard" id="sparkline-3"></div>
 				<div class="sparkline-dashboard-info">
-					<i class="fa fa-usd"></i>107.83M
-					<span>REVENUE</span>
+					<i class="fa fa-usd"></i>107,83
+					<span>CA</span>
 				</div>
 			</div>
 		</div>
@@ -54,10 +54,10 @@
 <div class="row-fluid">
 	<div id="dashboard_links" class="col-xs-12 col-sm-2 pull-right">
 		<ul class="nav nav-pills nav-stacked">
-			<li class="active"><a href="#" class="tab-link" id="overview">Overview</a></li>
-			<li><a href="#" class="tab-link" id="clients">Clients</a></li>
-			<li><a href="#" class="tab-link" id="graph">Statistics</a></li>
-			<li><a href="#" class="tab-link" id="servers">Servers</a></li>
+			<li class="active"><a href="#" class="tab-link" id="overview">&Uacute;ltimos Lancamentos</a></li>
+			<li><a href="#" class="tab-link" id="clients">Pedidos Propostas</a></li>
+			<li><a href="#" class="tab-link" id="graph">Oportunidades</a></li>
+			<li><a href="#" class="tab-link" id="servers">Projetos</a></li>
 		</ul>
 	</div>
 	<div id="dashboard_tabs" class="col-xs-12 col-sm-10">
@@ -71,40 +71,40 @@
 					<a href="#"><i class="fa fa-bookmark-o"></i></a>
 					<a href="#"><i class="fa fa-globe"></i></a>
 				</div>
-				<h4 class="page-header">MARKETPLACE</h4>
+				<h4 class="page-header">Movimento Financeiro</h4>
 				<table id="ticker-table" class="table m-table table-bordered table-hover table-heading">
 					<thead>
 						<tr>
-							<th>Ticker</th>
-							<th>Price</th>
-							<th>Change</th>
-							<th>Weekly Chart</th>
+							<th style="text-align:center">Transa&ccedil;&atilde;o</th>
+							<th style="text-align:center">Pre&ccedil;o</th>
+							<th style="text-align:center">Vencimento</th>
+							<th style="text-align:center">Cedente</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td class="m-ticker"><b>BRDM</b><span>Broadem Inc.</span></td>
-							<td class="m-price">33.27</td>
-							<td class="m-change"><i class="fa fa-angle-up"></i> 1.45 (27&#37;)</td>
-							<td class="td-graph"></td>
+							<td class="m-ticker">Pedido 13727</td>
+                            <td class="m-change" style="text-align:right"><i class="fa fa-angle-down"></i> 255,32</td>
+                            <td class="message-date" style="text-align:center">05/04/2016</td>
+                            <td class="m-ticker">SMC</td>
 						</tr>
 						<tr>
-							<td class="m-ticker"><b>ASWLL</b><span>Aswell Corp.</span></td>
-							<td class="m-price">45.13</td>
-							<td class="m-change"><i class="fa fa-angle-up"></i> 6.32 (12&#37;)</td>
-							<td class="td-graph"></td>
+                            <td class="m-ticker">Pedido 13726</td>
+                            <td class="m-change" style="text-align:right"><i class="fa fa-angle-down"></i> 255,32</td>
+                            <td class="message-date" style="text-align:center">05/04/2016</td>
+                            <td class="m-ticker">SMC</td>
 						</tr>
 						<tr>
-							<td class="m-ticker"><b>MIXL</b><span>Mixal LTD.</span></td>
-							<td class="m-price">71.13</td>
-							<td class="m-change"><i class="fa fa-angle-down"></i> 7.2 (12&#37;)</td>
-							<td class="td-graph"></td>
+                            <td class="m-ticker">Proj. Aspers&atilde;o de Oleo</td>
+                            <td class="m-change" style="text-align:right"><i class="fa fa-angle-up"></i> 255,32</td>
+                            <td class="message-date" style="text-align:center">05/04/2016</td>
+                            <td class="m-ticker"></td>
 						</tr>
 						<tr>
-							<td class="m-ticker"><b>LMPRD</b><span>L.A. Prod.</span></td>
-							<td class="m-price">30.24</td>
-							<td class="m-change"><i class="fa fa-angle-up"></i> 5.3 (18&#37;)</td>
-							<td class="td-graph"></td>
+                            <td class="m-ticker">Pedido 234</td>
+                            <td class="m-change" style="text-align:right"><i class="fa fa-angle-up"></i> 255,32</td>
+                            <td class="message-date" style="text-align:center">05/04/2016</td>
+                            <td class="m-ticker">Terminal de Container 5</td>
 						</tr>
 						<tr>
 							<td class="m-ticker"><b>ALK</b><span>Allien K.</span></td>
