@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Control.DAL
 {
-    public class Class1
+    public interface IUnitOfWork : IDisposable
     {
+        int SaveChanges();
     }
 }

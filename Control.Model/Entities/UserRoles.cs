@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Control.Model.Entities
 {
-    class UserRoles
+    public class UserRoles
     {
     }
 }

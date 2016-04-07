@@ -19,10 +19,12 @@ namespace Control.Model.Entities
         //Forgein Keys
         public int? ProductID { get; set; }
         
-        [ForeignKey("Id Produto")]
+        [ForeignKey("ProductID")]
         public virtual Product ProductUnit { get; set; }
 
         public int? TypeUnitID { get; set; }
+
+        [ForeignKey("TypeUnitID")]
         public virtual Unit TypeUnit { get; set; }
 
         public decimal Quantity { get; set; }

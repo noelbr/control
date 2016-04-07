@@ -12,6 +12,7 @@ using System.Web.Mvc;
 
 namespace Control.UI.Controllers
 {
+    [Authorize]
     public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;
@@ -128,6 +129,7 @@ namespace Control.UI.Controllers
         }
 
         // GET: Account
+        [Authorize]
         public ActionResult Index()
         {
             return View();
