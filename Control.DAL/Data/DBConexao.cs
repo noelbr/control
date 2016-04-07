@@ -44,13 +44,13 @@ namespace Control.DAL.Data
 
                 case 2:
                     //Local Gtwave
-                    strConn = @"User ID=cepe;Password=123;Data Source=SERVER2012;Initial Catalog=Control;MultipleActiveResultSets=true";
+                    strConn = @"User ID=cepe;Password=123;Data Source=SERVER2012;Initial Catalog=Control;MultipleActiveResultSets=true;provider=System.Data.SqlClient;";
                     break;
 
                 case 3:
 
-                    //Conexão de produção na Arisp
-                    strConn = @"user id=Cpedidos; password=*ar2011!; data source=172.16.0.86; initial catalog=CPEDIDOS;";
+                    //Conexão de produção Gtwave
+                    strConn = @"Data Source=192.99.149.206;Initial Catalog=control;Persist Security Info=True;User ID=userNogs;Password=q6f9u5489";
                     break;
 
                 case 4:

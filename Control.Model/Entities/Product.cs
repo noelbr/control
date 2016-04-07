@@ -21,7 +21,8 @@ namespace Control.Model.Entities
 
         public string Brand { get; set; }
         public string Model { get; set; }
-        
+        public string Description { get; set; }
+
         public string Height { get; set; } //Altura
         public string Width { get; set; } //Largura
         public string Lenght { get; set; } //Comprimento
@@ -32,7 +33,7 @@ namespace Control.Model.Entities
         public decimal CostPrice { get; set; }
         public decimal AliqICMS { get; set; }
 
-        public string Description { get; set; }
+        public decimal MinimumStockAlert { get; set; }
         public string ImageURL { get; set; }
         /// <summary>
         /// Indica se é um produto combinado, que possui outros produtos do estoque em sua composição

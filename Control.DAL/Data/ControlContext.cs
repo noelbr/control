@@ -18,7 +18,7 @@ namespace Control.DAL.Data
         public ControlContext()
             : base(DBConexao.GetConnectionString(), throwIfV1Schema: false)
         {
-            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<MLogisticContext>());
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<ControlContext>());
         }
 
         public ControlContext(DbConnection cn)
@@ -44,7 +44,23 @@ namespace Control.DAL.Data
             modelBuilder.Entity<IdentityUserLogin>().ToTable("UserLogins");
             modelBuilder.Entity<IdentityUserClaim>().ToTable("UserClaims");
             modelBuilder.Entity<IdentityRole>().ToTable("Roles");
+
+            modelBuilder.Entity<Contact>();
+            modelBuilder.Entity<Country>();
+            modelBuilder.Entity<Customer>();
+            modelBuilder.Entity<Order>();
+            modelBuilder.Entity<OrderProduct>();
+            modelBuilder.Entity<OrderType>();
+            modelBuilder.Entity<Product>();
+            modelBuilder.Entity<Provider>();
+            modelBuilder.Entity<Stock>();
+            modelBuilder.Entity<Storage>();
+            modelBuilder.Entity<TypeUnit>();
+            modelBuilder.Entity<Unit>();
+            modelBuilder.Entity<Vendor>();
         }
+
+        
 
         //public DbSet<User> Users { get; set; }
     }

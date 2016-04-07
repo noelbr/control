@@ -1,0 +1,296 @@
+﻿body {
+    margin: 0px;
+}
+
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+#main_container {
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.u0_normal {
+    background-image: url('../Cadastro_de_Visitas_files/u0_normal.png');
+}
+
+.u0_container {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1351px;
+    height:593px;
+}
+
+#u0_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:1351px;
+    height:593px;
+}
+
+.u1 {
+    position:absolute;
+    left:2px;
+    top:288px;
+    width:1347px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u2_normal {
+    background-image: url('../Cadastro_de_Visitas_files/u2_normal.png');
+}
+
+.u2_container {
+    position:absolute;
+    left:241px;
+    top:294px;
+    width:707px;
+    height:266px;
+}
+
+#u2_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:707px;
+    height:266px;
+}
+
+.u3 {
+    position:absolute;
+    left:2px;
+    top:125px;
+    width:703px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u4_normal {
+    background-image: url('../Cadastro_de_Visitas_files/u4_normal.png');
+}
+
+.u4_container {
+    position:absolute;
+    left:443px;
+    top:269px;
+    width:80px;
+    height:25px;
+}
+
+#u4_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:80px;
+    height:25px;
+}
+
+.u5 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:76px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u6_normal {
+    background-image: url('../Cadastro_de_Visitas_files/u6_normal.png');
+}
+
+.u6_container {
+    position:absolute;
+    left:523px;
+    top:269px;
+    width:87px;
+    height:24px;
+}
+
+#u6_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:87px;
+    height:24px;
+}
+
+.u7 {
+    position:absolute;
+    left:2px;
+    top:4px;
+    width:83px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u8_normal {
+    background-image: url('../Cadastro_de_Visitas_files/u8_normal.png');
+}
+
+.u8_container {
+    position:absolute;
+    left:609px;
+    top:268px;
+    width:61px;
+    height:26px;
+}
+
+#u8_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:61px;
+    height:26px;
+}
+
+.u9 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:57px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u10_normal {
+    background-image: url('../Cadastro_de_Visitas_files/u10_normal.png');
+}
+
+.u10_container {
+    position:absolute;
+    left:670px;
+    top:267px;
+    width:83px;
+    height:27px;
+}
+
+#u10_img {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:83px;
+    height:27px;
+}
+
+.u11 {
+    position:absolute;
+    left:2px;
+    top:6px;
+    width:79px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u12_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u12_container {
+    position:absolute;
+    left:523px;
+    top:268px;
+    width:147px;
+    height:26px;
+}
+
+#u12_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:153px;
+    height:32px;
+}
+
+.u13 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:143px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.u14_normal {
+    background-image: url('../resources/images/transparent.gif');
+}
+
+.u14_container {
+    position:absolute;
+    left:670px;
+    top:268px;
+    width:103px;
+    height:26px;
+}
+
+#u14_img {
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    width:109px;
+    height:32px;
+}
+
+.u15 {
+    position:absolute;
+    left:2px;
+    top:5px;
+    width:99px;
+    height:16px;
+    ;
+    ;
+    ;
+    font-family:Arial;
+    text-align:left;
+    word-wrap:break-word;
+}
+
