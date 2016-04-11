@@ -15,5 +15,20 @@ namespace Control.Model.Entities
         [Key]
         [DataMember]
         public int Id { get; set; }
+
+        public int CustomerID { get; set; }
+        public int? VendorID { get; set; }
+        public string ContatName { get; set; }
+        public string Phone { get; set; }
+        public string Mobile { get; set; }
+        public string Email { get; set; }
+        public string AddressStreet { get; set; }
+        public string AddressNumber { get; set; }
+        public string AddressDistrict { get; set; }
+        public string AddressCity { get; set; }
+        public string AddressState { get; set; }
+        public int ZipCode { get; set; }
+        public DateTime RegisterDate { get; set; }
+        public DateTime LastUpdate { get; set; }
     }
 }

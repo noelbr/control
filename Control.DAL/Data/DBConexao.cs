@@ -44,7 +44,7 @@ namespace Control.DAL.Data
 
                 case 2:
                     //Local Gtwave
-                    strConn = @"User ID=cepe;Password=123;Data Source=SERVER2012;Initial Catalog=Control;MultipleActiveResultSets=true;provider=System.Data.SqlClient;";
+                    strConn = @"User ID=cepe;Password=123;Data Source=SERVER2012;Initial Catalog=Control;";
                     break;
 
                 case 3:
@@ -75,7 +75,7 @@ namespace Control.DAL.Data
             }
 
             //Pooling
-            strConn += blnPooling == true ? @" Min Pool Size=20; Max Pool Size=300; Connect Timeout=300; Connection Reset=True;" : @" Pooling=false; Connect Timeout=45;";
+            //strConn += blnPooling == true ? @" Min Pool Size=20; Max Pool Size=300; Connect Timeout=300; Connection Reset=True;" : @" Pooling=false; Connect Timeout=45;";
 
             return strConn;
         }

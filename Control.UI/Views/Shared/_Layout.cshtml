@@ -7,7 +7,7 @@
     <meta name="description" content="description">
     <meta name="author" content="Gtwave soluções em Tecnologia">
 
-    
+    <script src="~/plugins/jquery/jquery-2.1.0.min.js"></script>
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 
     <!--Includes Layout - Begin-->
@@ -26,6 +26,22 @@
             <script src="http://getbootstrap.com/docs-assets/js/respond.min.js"></script>
     <![endif]-->
     <!-- Includes Layout - Fim-->
+
+    <!-- Includes Layout - Inicio-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="http://code.jquery.com/jquery.js"></script>-->
+    
+    <script src="~/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="~/plugins/justified-gallery/jquery.justifiedgallery.min.js"></script>
+    <script src="~/plugins/tinymce/tinymce.min.js"></script>
+    <script src="~/plugins/tinymce/jquery.tinymce.min.js"></script>
+    <!-- All functions for this theme + document.ready processing -->
+    <script src="~/js/devoops.js"></script>
+    <!-- Includes Layout - Fim -->
+
+
 
 </head>
 <body>
@@ -91,9 +107,9 @@
                             </div>
                         </div>
                         <div id="dvLoggedUser">
-                           @{
-                               Html.RenderPartial("LoggedUserPartial");
-                        }
+
+                            @Html.Partial("~/Views/Account/LoggedUserPartial.cshtml")
+                           
                         </div>
                     </div>
                 </div>
@@ -205,10 +221,12 @@
                             <li>@Html.ActionLink("Clientes", "Clientes", "Cadastro")</li>
                             <li>@Html.ActionLink("Fornecedores", "Fornecedores", "Cadastro")</li>
                             <li>@Html.ActionLink("Produtos", "Produtos", "Cadastro")</li>
-                            <li>@Html.ActionLink("Cadastro de “Prospects” (Funil de Vendas)", "Prospects", "Cadastro")</li>
+                            <li>@Html.ActionLink("Vendedores", "Vendedores", "Cadastro")</li>
+                            <li>@Html.ActionLink("Contatos", "Contatos", "Cadastro")</li>
+                            <!--<li>Html.ActionLink("Cadastro de “Prospects” (Funil de Vendas)", "Prospects", "Cadastro")</li>-->
                             <li>@Html.ActionLink("CFOP", "CFOP", "Cadastro")</li>
-                            <li><a class="ajax-link" href="ajax/maps.html">OpenStreetMap</a></li>
-                            <li><a class="ajax-link" href="ajax/map_fullscreen.html">Fullscreen map</a></li>
+                            <!--<li><a class="ajax-link" href="ajax/maps.html">OpenStreetMap</a></li>
+                            <li><a class="ajax-link" href="ajax/map_fullscreen.html">Fullscreen map</a></li>-->
                         </ul>
                     </li>
                     <!-- Menus não utilizados - Begin-->
@@ -300,14 +318,14 @@
             </div>
             <!--Start Content-->
             <div id="content" class="col-xs-12 col-sm-10">
-                <div class="preloader">
+                @*<div class="preloader">
                     <img src="img/devoops_getdata.gif" class="devoops-getdata" alt="preloader" />
-                </div>
+                </div>*@
                 @RenderBody()
-                <div id="ajax-content">
+                @*<div id="ajax-content">
                     
-                </div>
-                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                </div>*@
+                @*<p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>*@
             </div>
             <!--End Content-->
         </div>
@@ -316,20 +334,7 @@
        
 
 
-    
-    <!-- Includes Layout - Inicio-->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!--<script src="http://code.jquery.com/jquery.js"></script>-->
-    <script src="plugins/jquery/jquery-2.1.0.min.js"></script>
-    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="plugins/justified-gallery/jquery.justifiedgallery.min.js"></script>
-    <script src="plugins/tinymce/tinymce.min.js"></script>
-    <script src="plugins/tinymce/jquery.tinymce.min.js"></script>
-    <!-- All functions for this theme + document.ready processing -->
-    <script src="js/devoops.js"></script>
-    <!-- Includes Layout - Fim -->
+
     <script type="text/javascript">
 
     function atualizarDefinicao() {
@@ -347,7 +352,7 @@
     }
 
     $(document).ready(function () {
-        setInterval(atualizarDefinicao, 30000);
+        setInterval(atualizarDefinicao, 30000);        
     });
 
     </script>
@@ -357,3 +362,4 @@
 
 </body>
 </html>
+

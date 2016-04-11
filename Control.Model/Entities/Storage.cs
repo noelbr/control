@@ -28,5 +28,6 @@ namespace Control.Model.Entities
         public virtual Unit TypeUnit { get; set; }
 
         public decimal Quantity { get; set; }
+        public DateTime UpdateDate { get; set; }
     }
 }
